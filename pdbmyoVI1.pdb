@@ -1,0 +1,25 @@
+ATOM      1  CA  VAL A   1       0.000   0.000   0.000    3.50   62.50
+ATOM      2  CA  VAL A   2       1.513   0.000  -4.660    1.40   25.00
+ATOM      3  CA  VAL A   3       2.378   0.000  -7.324    1.40   25.00
+ATOM      4  CA  VAL A   4       3.243   0.000  -9.987    1.40   25.00
+ATOM      5  CA  VAL A   5       4.108   0.000 -12.650    1.40   25.00
+ATOM      6  CA  VAL A   6       4.973   0.000 -15.313    1.40   25.00
+ATOM      7  CA  VAL A   7       5.838   0.000 -17.976    1.40   25.00
+ATOM      8  CA  VAL A   8       4.973   0.000 -20.639    1.40   25.00
+ATOM      9  CA  VAL A   9       4.108   0.000 -23.302    1.40   25.00
+ATOM     10  CA  VAL A  10       3.243   0.000 -25.965    1.40   25.00
+ATOM     11  CA  VAL A  11       2.378   0.000 -28.628    1.40   25.00
+ATOM     12  CA  VAL A  12       1.513   0.000 -31.291    1.40   25.00
+ATOM     13  CA  VAL A  13       0.000   0.000 -35.952    3.50   62.50
+CONECT    1    2 
+CONECT    2    3 
+CONECT    3    4 
+CONECT    4    5 
+CONECT    5    6 
+CONECT    6    7 
+CONECT    7    8 
+CONECT    8    9 
+CONECT    9   10 
+CONECT   10   11 
+CONECT   11   12 
+CONECT   12   13 

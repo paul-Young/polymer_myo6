@@ -1,13 +1,6 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
+src/polymer.udb
+run_myo
+output
+Data
+Struct_data
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
