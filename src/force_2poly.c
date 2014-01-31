@@ -200,9 +200,19 @@ void check(){
 	dr2=(xb-Amino[tot_amino].x)*(xb-Amino[tot_amino].x)+(yb-Amino[tot_amino].y)*(yb-Amino[tot_amino].y)+(zb-Amino[tot_amino].z)*(zb-Amino[tot_amino].z);
 	if (dr2<DR2_limit){
 		bound=step;
-                update();
-                write_protein();
-                printf("STEPPED!\n");
+		update();
+		write_protein();
+		printf("%d\n",bound);
+		printf("FOWARD STEP!\n");
+		exit(0);
+	}
+	dr2=(xbb-Amino[tot_amino].x)*(xbb-Amino[tot_amino].x)+(ybb-Amino[tot_amino].y)*(ybb-Amino[tot_amino].y)+(zbb-Amino[tot_amino].z)*(zbb-Amino[tot_amino].z);
+	if (dr2<DR2_limit && step>nav2){ // check backstep after detachment
+		bound=step;
+		update();
+		write_protein();
+		printf("%d\n",bound);
+		printf("STOMP!\n");
 		exit(0);
 	}
 }

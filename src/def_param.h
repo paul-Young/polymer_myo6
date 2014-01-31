@@ -29,6 +29,9 @@
 #define xb	0.0
 #define yb	0.0
 #define zb	36.0	// capture site 
+#define xbb	0.0
+#define ybb	0.0
+#define zbb	-36.0	// backward binding site
 //#define pull_force	1.0  // pulling force on the dimerization site
 
 double vc,thetac,pull_force;

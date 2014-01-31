@@ -1,4 +1,4 @@
-src/polymer.udb
+*.udb
 run_myo
 output
 Data

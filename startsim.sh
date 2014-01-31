@@ -13,7 +13,7 @@ then
 fi
 
 
-for run in {1..4}
+for run in {1..2}
 do
 	nice ./run_myo pdbmyoVI1.pdb pdbmyoVI1.pdb $run > output/out$run.log &
 done
