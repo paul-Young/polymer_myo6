@@ -10,7 +10,6 @@ void force(){
 		
 	repel();
 	bond();
-	epot_bend=0.0;
 	bend3(1,tot_pol1);
 	bend3(tot_pol1+1,tot_amino);
 	end_tangent();
@@ -19,7 +18,7 @@ void force(){
 }
 
 void pull(){
-	
+	epot_pull = 0.0;
 	Amino[tot_pol1].fcz+=pull_force;
 	
 }

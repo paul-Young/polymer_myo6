@@ -18,7 +18,7 @@
 #define stepsim  10000000000 /* number of simulation steps for heating under zero applied force */
 #define nav      10000    /* frequency to get information about chain conformation in update */
 #define nav1     nav      /* frequency to save data in out file  */
-#define nav2     (100*nav)   /* frequency to save chain conformation in Struct_data */
+#define nav2     nav   /* frequency to save chain conformation in Struct_data */
 #define temp     0.6      /* temperature (in units of (eh/kB)); 0.6 kcal/mol = 300 K */
 #define eps      1.E-6
 #define INF      100000.0
@@ -43,7 +43,7 @@ long long int step;      // to acommodate long runs
 int run; // for multiple runs (must be an interger less than 10000, because run-10000 is used as random seed)
 int    *order_N, *nr_N;
 double **R0;
-double epot_bend,epot_bond,epot_rep,epot_tangent,tempav,epot,rg;
+double epot_pull,epot_bend,epot_bond,epot_rep,epot_tangent,tempav,epot,rg;
 int    mseed;
 
 atom *Atom;
