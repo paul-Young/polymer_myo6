@@ -31,13 +31,13 @@ int getdir (string dir, vector<string> &files)
 
 int main(){
 
-    string traj_directory = "../Struct_data/2/";
+    string traj_directory = "../Struct_data/1/";
     vector<string> files = vector<string>();
 
     getdir(traj_directory,files);
     
     for (int i=0;i<files.size();i++){
-        Protein myoVI((traj_directory + "myoVI1.structure_"+ std::to_string(i) +".pdb").c_str());
+        Protein myoVI((traj_directory + "myoVI1.structure_"+ to_string(i) +".pdb").c_str());
         cout << myoVI.chain[KINK].z << endl;
     }
     

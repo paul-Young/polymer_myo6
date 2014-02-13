@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATA_DIR=../Data
+DATA_DIR=../output
 DATA_FILE=diff_time.dat
 
 cd $DATA_DIR
@@ -11,5 +11,7 @@ fi
 
 for file in $(ls)
 do
-	tail -n 1 $file | awk '{print $1}' >> $DATA_FILE
+	tail -n 2 $file | head -n 1 >> $DATA_FILE
 done
+
+mv $DATA_FILE ../Data

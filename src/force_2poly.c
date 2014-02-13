@@ -206,7 +206,7 @@ void check(){
 		exit(0);
 	}
 	dr2=(xbb-Amino[tot_amino].x)*(xbb-Amino[tot_amino].x)+(ybb-Amino[tot_amino].y)*(ybb-Amino[tot_amino].y)+(zbb-Amino[tot_amino].z)*(zbb-Amino[tot_amino].z);
-	if (dr2<DR2_limit && step>nav2){ // check backstep after detachment
+	if (dr2<DR2_limit && step>1000*nav){ // check backstep after detachment
 		bound=step;
 		update();
 		write_protein();
