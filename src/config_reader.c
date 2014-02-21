@@ -14,6 +14,7 @@ void read_config(char* filename){
 		if (!strcmp(name,"vc")) vc=value;
 		if (!strcmp(name,"thetac")) thetac=value;
 		if (!strcmp(name,"pull_force")) pull_force=value;
+		if (!strcmp(name,"k_bend")) k_bend=value;
 		
 	}
 	

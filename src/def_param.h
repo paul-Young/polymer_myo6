@@ -13,7 +13,7 @@
 #define a0       3.8 	    /* soft-core repulsive distance */
 #define kspring_cov 200.0  /* spring constant in the harmonic bond between adjacent beads */
 #define el       20.0     /* energy scale for purely repulsive LJ pot. */
-#define k_bend	 14.0      /* bending potential strength - define persistence length */
+//#define k_bend	 14.0      /* bending potential strength - define persistence length */
 #define R_limit  10.0     /* max distance between beads before program exits, compare to a0 */
 #define stepsim  10000000000 /* number of simulation steps for heating under zero applied force */
 #define nav      10000    /* frequency to get information about chain conformation in update */
@@ -34,7 +34,7 @@
 #define zbb	-36.0	// backward binding site
 //#define pull_force	1.0  // pulling force on the dimerization site
 
-double vc,thetac,pull_force;
+double vc,thetac,pull_force,k_bend;
 double dr2_min; // min distance to binding site
 int bound; // flag for reaching binding site
 double tangx, tangy, tangz; // end tangent constaint related
