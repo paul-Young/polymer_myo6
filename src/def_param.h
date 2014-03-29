@@ -18,7 +18,7 @@
 #define stepsim  10000000000 /* number of simulation steps for heating under zero applied force */
 #define nav      10000    /* frequency to get information about chain conformation in update */
 #define nav1     nav      /* frequency to save data in out file  */
-#define nav2     nav   /* frequency to save chain conformation in Struct_data */
+#define nav2     100*nav   /* frequency to save chain conformation in Struct_data */
 #define temp     0.6      /* temperature (in units of (eh/kB)); 0.6 kcal/mol = 300 K */
 #define eps      1.E-6
 #define INF      100000.0

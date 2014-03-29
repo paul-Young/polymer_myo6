@@ -1,4 +1,4 @@
 vc	1.0
 thetac	30.0
 pull_force 0.0
-k_bend	20.0
+k_bend	14.0
