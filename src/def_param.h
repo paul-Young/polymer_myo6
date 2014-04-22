@@ -5,8 +5,8 @@
 
 #include "structure.h"
 
-#define tot_amino  13     /* number of amino acids -- needed to insure that structures 1 and 2 are compatible */ 
-#define tot_pol1   7   
+#define tot_amino  15     /* number of amino acids -- needed to insure that structures 1 and 2 are compatible */ 
+#define tot_pol1   8   
 
 #define h        0.04     /* integration step */
 #define zeta     25.0     /* (zeta*(1/tau_L)*(eh/temp) sets the natural time for the overdamped motion */
