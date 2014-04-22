@@ -15,7 +15,6 @@ Protein::Protein()
 
 Protein::Protein(std::string filename)
 {
-    sscanf(name,"myoVI");
     this->read(filename);
 }
 
@@ -25,6 +24,7 @@ void Protein::read(std::string filename){
     FILE   *fp;
     char   buffer[BUF_MAX], *s;
     fp = fopen(filename.c_str(),"r");
+    name = filename.substr(0,filename.find_last_of("."));
 
     size=0;
     while(fgets(buffer,BUF_MAX,fp) && (buffer[0]!='\n')){
@@ -75,5 +75,12 @@ std::ostream& operator<<(std::ostream& os, const Protein& obj)
     for (int i=1;i<=obj.size;i++){
         os << obj.chain[i].z;
     }
+    return os;
+}
+
+std::ostream& operator<<(std::ostream& os, const Amino& obj)
+{
+	os << "<Amino " << obj.idx 
+		<< ": (" << obj.x << ","<< obj.y << ","<< obj.z << ")>";
     return os;
 }
